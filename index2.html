@@ -62,7 +62,15 @@
         import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, getDoc, updateDoc, onSnapshot, collection, deleteDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { projectId: "demo-project" };
+        const firebaseConfig = {
+    apiKey: "AIzaSyAvtf6jwncCxXLJrnN8tCZCSRdYwRoRMLE",
+    authDomain: "school-balance-83574.firebaseapp.com",
+    projectId: "school-balance-83574",
+    storageBucket: "school-balance-83574.firebasestorage.app",
+    messagingSenderId: "453228311111",
+    appId: "1:453228311111:web:503bcaddabe6a1b049f762"
+  };
+
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
         const db = getFirestore(app);
